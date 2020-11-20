@@ -1,12 +1,5 @@
 import os
 import sys
-try:
-	import progressbar
-except ImportError:
-	print '[-] Failed to import progressbar .'
-	print '    Run "pip install progressbar2" or "easy_install progressbar2" '
-	print 'Use python2 to run this code '
-	sys.exit(1)
 
 import urllib2
 
@@ -19,7 +12,6 @@ logo="""
 	"""
 while(True):
 	os.system('clear')
-	print logo
 	print "\n\t\tCREATED BY SPEEDX!!!"
 	print "\n\n1 - Start BOT "
 	print "2 - How To USE"
