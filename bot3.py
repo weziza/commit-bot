@@ -89,11 +89,10 @@ while(True):
 		os.system('cd test && git add .')
 		print '[+] Directory Initialized '
 		print '[+] Starting Commits To Gain Contribution...'
-		for i in progressbar.progressbar(range(nc-1),redirect_stdout=True):
-			os.system('echo THIS IS A COMMIT BY SPEEDX COMMIT BOT >> test/temp.speedx.xxx')
-			os.system('cd test && git add temp.speedx.xxx . >/dev/null')
-#			print '[-] Commit Number: '+str(i+1)
-			os.system('cd test && git commit -m \'Commit By SpeedX Bot!!! \'>/dev/null')
+		os.system('echo THIS IS A COMMIT BY SPEEDX COMMIT BOT >> test/temp.speedx.xxx')
+		os.system('cd test && git add temp.speedx.xxx . >/dev/null')
+#		print '[-] Commit Number: '+str(i+1)
+		os.system('cd test && git commit -m \'Commit By SpeedX Bot!!! \'>/dev/null')
 		print '\n[+] Cleaning Repository...'
 		os.system('rm test/temp.speedx.xxx')
 		os.system('cd test && git gc')
